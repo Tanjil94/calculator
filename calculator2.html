@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator2</title> 
+    <link rel="stylesheet" href="style2.css">
+   
+</head>
+<body>
+    <h1>Calculator2</h1>
+    <div class="card">
+       
+       
+     <form>
+        <div class="display">
+            <input type="text" name="display">
+
+        </div>
+        <div class="calc-body">
+         <input type="button" class="but" value="C" onclick="display.value = '' " class="oparator">
+         <input type="button" class="but" value="D" onclick="display.value =  display.value.toString().slice(0,-1)">
+         <input type="button" class="but" value="%" onclick="display.value += '%' ">
+         <input type="button" class="but but-style" value="/" onclick="display.value += '/' ">
+        </div>
+        <div>
+         <input type="button" class="but" value="7" onclick="display.value += '7' ">
+         <input type="button" class="but" value="8" onclick="display.value += '8' "> 
+         <input type="button" class="but" value="9" onclick="display.value += '9' ">
+         <input type="button" class="but but-style" value="*" onclick="display.value += '*' "> 
+        </div>
+        <div>
+            <input type="button" class="but" value="4" onclick="display.value += '4' ">
+            <input type="button" class="but" value="5" onclick="display.value += '5' ">
+            <input type="button" class="but" value="6" onclick="display.value += '6' ">
+            <input type="button" class="but but-style" value="-" onclick="display.value += '-' ">
+        </div>
+        <div>
+            <input type="button" class="but" value="1" onclick="display.value += '1' ">
+            <input type="button" class="but" value="2" onclick="display.value += '2' ">
+            <input type="button" class="but" value="3" onclick="display.value += '3' ">
+            <input type="button" class="but but-style" value="+" onclick="display.value += '+' ">
+        </div>
+        <div>
+            <input type="button" class="but" value="0" onclick="display.value += '0' ">
+            <input type="button" class="but" value="00" onclick="display.value += '00' ">
+            <input type="button" class="but" value="."  onclick="display.value += '.' ">
+            <input type="button" class="but" style="background-color: rgb(35, 6, 18);" value="=" onclick="display.value = eval(display.value)">
+        </div>
+    </form>
+    </div>
+
+
+</script>
+</body>
+</html>

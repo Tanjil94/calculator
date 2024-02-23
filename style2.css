@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+}
+.card{
+margin: 0 auto ;
+max-width: 350px;
+text-align: center;
+margin-top: 10px;
+translate: 0.3s;
+box-shadow: 0 4px 8px hotpink;
+font-size: 0;
+
+}
+.card :hover{
+    box-shadow: 0 8px 16px gray;
+}
+form .display{
+   
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px 0;
+
+}
+form .display input{
+    max-width: 345px;
+   text-align: right;
+   flex: 1;
+   font-size:45px ;
+   box-shadow:none ;
+    
+}
+
+.but{
+    width: 87px;
+    height: 70px;
+    font-size: 16px;
+    background-color: black;
+    color: beige;
+}
+.but-style{
+background-color: rgb(26, 66, 79);
+}
+.but:hover{
+background-color: deeppink;
+cursor: pointer;
+}
